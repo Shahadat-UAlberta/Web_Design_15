@@ -1,0 +1,21 @@
+@media (max-width: 987px) {
+	.right-section,
+	.left-section{
+		width: 95%;
+	}
+	.contact-form{
+		width: 75%;
+	}
+}
+@media ( max-width: 768px) {
+	.member{
+		width: 46.5%;
+		margin-bottom: 20px;
+	}
+}
+@media ( max-width: 576px){
+	.member{
+		width: 95%;
+		margin-bottom: 20px;
+	}
+}

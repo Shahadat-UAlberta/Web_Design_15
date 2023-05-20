@@ -1,0 +1,34 @@
+@media(max-width: 991px){
+	.about-left,.about-right{
+		width: 100%;
+	}
+	.about-left{
+		margin-bottom: 20px;
+	}
+	.about-left img{
+		margin:0 auto;
+	}
+	.members{
+		width: 48%;
+		padding-bottom: 20px;
+	}
+	.contact-form{
+		width: 80%;
+	}
+
+}
+@media(max-width: 575px) {
+		.members{
+			width: 100%;
+			padding-bottom:20px;
+		}
+		.members img{
+			margin: 0 auto;
+		}
+		.contact-form{
+			width: 100%;
+		}
+
+
+
+}

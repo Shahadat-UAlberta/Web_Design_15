@@ -1,0 +1,352 @@
+/*-------------
+   General css
+---------------*/
+
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+
+
+*{
+	padding:0;
+	margin: 0;
+}
+body{
+	background: #fff;
+	font-family: 'Bona Nova', serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 17px;
+}
+h1{font-size: 40px;}
+h2{font-size: 30px;}
+h3{font-size: 20px;}
+/*------------------
+	Header Area css
+--------------------*/
+.header-area{
+	background:#f1f2f6;
+	border: outset;
+	padding: 10px 0;
+
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+
+}
+.header-content{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	width: 20%;
+
+	
+
+}
+.menu{
+	width: 60%;
+	margin-top: 27px;
+
+}
+.menu> ul{
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	list-style: none;
+	position: relative;
+}
+.menu ul li a{
+	padding: 5px 20px;
+	display: block;
+	font-weight: 800;
+	transition: .3s;
+	color:  #FF5C5C;
+}
+.menu ul li a:hover{
+	color: #F2A22C;
+	transform: translateY(-2px);
+}
+.menu ul ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display:none;
+}
+.menu ul li:hover ul{
+	background: #f1f2f6;
+	display: block;
+	white-space: nowrap;
+}	
+.search{
+	width: 20%;
+	position: relative;
+}
+.search input{
+	width: 100%;
+	
+	padding: 10px 5px;
+	margin-top: 20px;
+	border: outset;
+	
+}
+.search button{
+	position: absolute;
+	top: 40%;
+	right: 5px;
+	background: transparent;
+	border: none;
+}
+.search button i{
+	font-size: 20px;
+	
+}
+/*----------------------
+	Header Area css end
+------------------------*/
+
+
+
+/*------------------
+	Banner css
+--------------------*/
+.banner{
+	background: url(photos/ph9.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.banner-overlay{
+	background: rgba(137, 196, 244, .7);
+	padding: 200px 0;
+
+}
+.banner-content{
+	width: 40%;
+	margin: 5px auto;
+	color: rgba(34, 49, 63, 1);
+}
+.banner-content h1{
+	padding: 20px 0;
+}
+/*------------------
+	Banner css End
+--------------------*/
+/*------------------
+	About us css
+--------------------*/
+.about-area{
+	margin: 80px 0;
+	background: #f2f2f2;
+}
+.section-title h2{
+	color:  #FF5C5C;
+	text-align: center;
+	padding: 50px 0;
+	text-transform: capitalize;
+
+}	
+.section-title h2 span{
+	color: #F2A22C;
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+
+}
+.about-left{
+	width: 40%;
+	border: outset;
+		
+}
+.about-left:hover img{
+	transform: scale(1.1);
+	transition: .5s;
+}
+.about-left h3{
+	text-transform: capitalize;
+	text-align: center;
+	color: rgb(0,0,0,.5);
+	padding: 3px 0;
+}
+.about-right{
+	width: 45%;
+	border: outset;
+	padding: 10px 30px;
+	background: #fff;
+}
+
+.about-right p{
+	padding: 10px 0;
+	margin: 30px 0;
+}
+
+.about-right a{
+	padding: 10px 20px;
+	color: #fff;
+	background: #F2A22C;
+	display: inline-block;
+	border: outset;
+}
+.about-right a:hover{
+	background:#FF5C5C;
+}
+.about-button{
+	text-align: right;
+}
+/*------------------
+	About us css End
+--------------------*/
+
+/*------------------
+	our team css
+--------------------*/
+.team-area{
+	background:#f2f2f2;
+	margin-bottom:80px; 
+
+}
+
+.team-members{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.members{
+	width: 23%;
+	position: relative;
+	overflow: hidden;
+
+}
+.members-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	right: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.members:hover .members-overlay{
+	right: 0;
+	transition: .7s;
+} 
+.members-info{}
+.members-info h3{
+	color: #fff;
+	text-transform: capitalize;
+}
+.members-info h3:hover{
+	color:  #F2A22C;
+	cursor: pointer;
+}
+.members-info ul{
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.members-info ul li{
+	list-style: none;
+}
+.members-info ul li a{
+	color: #fff;
+	padding: 15px 5px;
+	display: block;
+}
+.members-info ul li a:hover{
+	color:  #F2A22C;
+}
+.members-info ul li a i{}
+
+/*------------------
+	our team css End
+--------------------*/
+
+
+/*------------------
+	contact css 
+--------------------*/
+.contact-area{
+	background: #f2f2f2;
+}
+.contact-form{
+	width: 50%;
+	margin: 0 auto 80px;
+}
+.contact-form input,
+.contact-form textarea{
+	width: 100%;
+	box-sizing: border-box;
+	border: outset;
+}
+.contact-form input :focus{
+	outline: 0;
+}
+.contact-form label{
+	font-size: 16px;
+	color: #2c3e50;
+	font-weight: bold;
+	display: block;
+	text-align:  center;	
+}
+.user-name{
+	display: flex;
+	justify-content: space-between;  
+}
+.f-name{
+	width: 48%;	
+}
+.l-name{
+	width: 48%;
+}
+.f-name	input,.l-name input,.user-mail input{
+	padding: 10px 0;
+}	 
+.submit-button input{
+	background: #F2A22C; 
+	color: #fff;
+	border: none;
+	padding: 5px 5px;
+	transition: .3s;
+}
+.submit-button input:hover{
+	cursor: pointer;
+	transform: translateY(-3px);
+	background: #FF5C5C;
+}
+.f-name label,.l-name label,.user-mail label,.user-message label{
+	padding:10px 0; 
+}
+
+/*------------------
+	contact css end
+--------------------*/
+
+
+/*------------------
+	footer css 
+--------------------*/
+footer{
+	background: #2c3e50;
+	padding: 30px 0;
+	color: #fff;
+	text-align: center;
+}
+footer p{
+	text-transform: capitalize;
+	font-size: 15px;
+}

@@ -1,0 +1,297 @@
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		Google Fonts
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		Genaral CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: white;
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		Header CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+.header-area{
+	background: #ecf0f3;
+	padding: 20px 0;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.header-content{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	max-width: 15%;
+}
+.menu{
+	width: 60%;
+}
+.menu > ul{
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	list-style: none;
+	position: relative;
+}
+.menu ul li a{
+	padding: 5px 20px;
+	color: #34495e;
+	display: block;
+	font-weight: 800;
+	transition: 0.3s;
+}
+.menu ul li a:hover{
+	color: #ED6B09;
+	transform: translatey(-2px);
+}
+.menu ul ul{
+	position: absolute;
+	top: 100;
+	left: 0;
+	background: #ecf0f3;
+	display: none;
+
+}
+.menu ul li:hover ul{
+	display: block;
+}
+.menu ul ul li{
+	white-space: nowrap;
+}
+.menu ul ul li a{
+	padding: 10px 20px;
+}
+.search{
+	width: 20%;
+	position: relative;
+}
+.search input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+.search button{
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	border: none;
+	background: none;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		Banner CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+.banner{
+	background: url(images/pier.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.banner-overlay{
+	background: rgba(0, 0, 0, .5);
+	padding: 320px 0;
+}
+.banner-content{
+	text-align: center;
+	color: #fff;
+	width: 50%;
+	margin: 0 auto;
+}
+.banner-content h1{
+	margin-bottom: 15px;
+	font-size: 50px;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		About CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+.about-us{
+	padding: 85px 0;
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.about-left{
+	width: 45%;
+}
+.about-right{
+	width: 50%;
+}
+.about-right h3{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.about-right h3 span{
+	color: #ED6B09;
+}
+.about-right p{
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 1.6em;
+}
+.about-right a{
+	background: #ED6B09;
+	padding: 8px 20px;
+	color: #fff;
+	margin-top: ;
+	display: inline-block;
+	margin-top: 10px;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		Team CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+.team-area{
+	padding: 85px 0;
+	background: #f2f2f2;
+}
+.section-title{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.section-title h2{
+	color: #2c3e50;
+	font-size: 35px;
+}
+.section-title span{
+	color: #ED6B09;
+}
+.team-members{
+	display: flex;
+	justify-content: space-between;
+}
+.member{
+	width: 23.5%;
+	position: relative;
+	overflow: hidden;
+}
+.member:hover .member-overlay{
+	right: 0;
+}
+.member-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	position: absolute;
+	top: 0;
+	right: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.member-info{
+}
+.member-info h4{
+	color: #fff;
+	text-align: center;
+}
+.member-info ul{
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+.member-info ul li{}
+.member-info ul li a{
+	color: #fff;
+	padding: 5px 10px;
+	display: block;
+	transition: 0.3s;
+}
+.member-info ul li a:hover{
+	color: #ED6B09;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		Contact CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+.contact-area{
+	background: #fff;
+	padding: 85px 0;
+}
+.contact-form{
+	width: 50%;
+	margin: 0 auto;
+}
+.contact-form label{
+	font-size: 14px;
+	color: #2c3e50;
+}
+.contact-form input{
+	width: 100%;
+}
+.contact-form textarea{
+	width: 100%;
+}
+.contact-form input:focus{
+	outline: 0;
+}
+.user-name{
+	display: flex;
+	justify-content: space-between;
+}
+.f-name{
+	width: 48%;
+}
+.l-name{
+	width: 48%;
+}
+.f-name input,
+.l-name input,
+.user-mail input,
+.user-msg textarea
+{
+	padding: 5px;
+	border: 1px solid #2c3e50;
+	box-sizing: border-box;
+} 
+.user-msg textarea:focus{
+	outline: 0;
+}
+.user-mail input{
+
+}
+.user-msg,
+.submit-button,
+.user-mail{
+	margin-top: 10px;
+}
+.submit-button input{
+	border: none;
+	background: #EF6A0A;
+	padding: 5px 0;
+	color: white;
+}
+.submit-button input:hover{
+	cursor: pointer;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-==-=-=-=
+		Footer CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--*/
+footer{
+	background: #273c75;
+	color: white;
+	padding: 30px 0;
+	text-align: center;
+}
+footer p span a{
+	color: #EF6A0A;
+}

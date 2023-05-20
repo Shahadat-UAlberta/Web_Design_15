@@ -1,0 +1,300 @@
+/*=-=-=-=-=-==-=-
+	Genaral css
+-=-==-==-=-==-=-=*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+h1{
+	font-size: 45 px;
+}
+h2{
+	font-size: 40px;
+}
+/*-==--=-=-=-=-=-=
+	Header css
+-=-=-=-=-=-=-=-=-*/
+
+.header-area{
+	background: #ecf0f1;
+	padding: 20px 0;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.header-content{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	width: 15%;
+}
+.menu{
+	width: 60%;
+}
+.menu > ul{
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	list-style: none;
+	position: relative;
+}
+.menu ul li a{
+	color: #34495e;
+	padding: 5px 20px;
+	display: block;
+	font-weight: 800;
+	text-transform: capitalize;
+}
+.menu ul li a:hover{
+	color: #e84393;
+	transform: translateY(-2px);
+	transition: .3s;
+}
+.menu ul ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #ecf0f1;
+	display: none;
+}
+.menu ul li:hover ul{
+	display: block;
+}
+.menu ul ul li{
+	white-space: nowrap;
+}
+.menu ul ul li a{
+	padding: 10px 20px;
+}
+.search{
+	width: 20%;
+	position: relative;
+}
+.search input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+.search button{
+	position: absolute;
+	right: 10px;
+	background: transparent;
+	border: none;
+	top:30%;
+}
+
+/* -=-=-=-=-=-=-
+	banner css
+-=-=-=-=-=-=-=-=*/
+
+.banner{
+	background: url('images/3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 240px 0;
+}
+.banner-overlay{
+	background: rgba(0, 0, 0, .5);
+	
+}.banner-content{
+	text-align: center;
+	color:#000;
+	width: 70%;
+	margin: 0 auto;
+}
+.banner-content h1{
+	margin-bottom: 15px;
+}
+
+/* -=-=-=-=-=-=-
+	About css
+-=-=-=-=-=-=-=-=*/
+.about-us{
+	padding: 85px 0;
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.about-left{
+	width: 45%;
+}
+.about-right{
+	width: 50%;	
+}
+.about-right h3{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.about-right h3 span{
+	color: #e84393;
+}
+.about-right p{
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 1.6em;
+}
+.about-right a{
+	background: #e84393;
+	color: #fff ;
+	padding: 8px 25px;
+	margin-top: 10px;
+	display: inline-block;
+}
+.learn-more{
+	text-align: right;
+}
+
+
+
+/* -=-=-=-=-=-=-
+	Team css
+-=-=-=-=-=-=-=-=*/
+
+.team-area{
+	padding: 85px 0;
+	background: #faf5fa;
+}
+.section-title{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.section-title h2{
+	color:#e84393;
+}
+.section-title span{
+	color: #e84393;
+}
+
+.team-members{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.member{
+	width: 23.5%;
+	position: relative;
+	overflow: hidden;
+}
+
+.team-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(253, 121, 168, .6);
+	position: absolute;
+	top: 0;
+	right:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .6s;
+}
+.member-info{
+
+}
+.member-info h4{
+	color: #000;
+	text-align: center;
+}
+.member-info ul{
+	padding: 0;
+	list-style:none;
+	display: flex;
+}
+.member-info ul li{
+
+}
+.member-info ul li a{
+	padding: 5px 15px;
+	display: block;
+}
+.member-info ul li a:hover{
+	color: #e84393;
+}
+.member:hover .team-overlay{
+	right:0;
+}
+
+/* -=-=-=-=-=-=-
+	contact css
+-=-=-=-=-=-=-=-=*/
+
+.contact-area{
+	background: #fff;
+	padding: 85px 0;
+}
+.contact-form{
+	width: 50%;
+	margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea{
+	width: 100%;
+	box-sizing: border-box;
+}
+.contact-form input: focus,
+.contact-form textarea: focus{
+	outline: 0;
+}
+.contact-form label{
+	font-size: 14px;
+	color: #636e72;
+}
+.user-name{
+	display: flex;
+	justify-content: space-between;
+}
+.f-name, .l-name{
+	width: 48%;
+}
+.f-name input, 
+.l-name input, 
+.user-mail input,
+.user-msg textarea{
+	padding: 5px;
+	border: 1px solid #7f8c8d;
+}
+.user-msg,
+.user-mail,
+.submit-button{
+	margin-top: 10px;
+}
+.submit-button input{
+	border: none;
+	background: #e84393;
+	padding: 5px 0;
+	color: #000;
+}
+.submit-button input:hover{
+	cursor: pointer;
+}
+footer{
+	background: #dfe6e9;
+	color: #000;
+	text-align: center;
+	padding: 15px 0;
+}
+footer p a{
+	color: #e84393;
+}
+

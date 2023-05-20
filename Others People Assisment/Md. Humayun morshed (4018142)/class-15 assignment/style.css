@@ -1,0 +1,377 @@
+/*==============================
+			Genreal Css
+===============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+text-decoration: none;
+}
+
+body{
+	background: #fff;
+	height: auto;
+	font-family: 'Oxygen', sans-serif;
+
+}
+img {
+	height: auto;
+	display: block;
+	width: 100%;
+
+}
+
+h1{
+	font-size: 45px;
+
+}
+h2{
+	font-size: 35px;
+}
+ 
+h3{
+	font-size: 30px;
+}
+
+/*==============================
+			header Css
+===============================*/
+
+.header-area{
+	background: #b2bec3;
+	margin-bottom: 5px;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+
+}
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.logo{
+	width: 25%;
+
+}
+.logo h2{color: red;
+text-transform: capitalize;}
+
+.menu{
+	width: 45%;
+}
+
+.menu>ul {
+	display: flex;
+	justify-content: center;
+
+}
+.menu ul li{
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li a{
+	display: block;
+	padding: 10px 20px;
+	font-weight: 500;
+	text-transform: capitalize;
+	transition: .3s;
+	color: #000;
+
+}
+
+.menu ul li a:hover {
+	color: #ff5252;
+	transform: translateY(-2px);
+}
+
+.menu ul ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #c7ecee;
+	display: none; 
+}
+
+.menu ul li:hover ul{
+	display: block;
+
+} 
+
+.menu ul ul li{
+	white-space: nowrap;
+}
+
+.menu ul ul li li a{
+	padding: 10px 20px;
+
+}
+.header-search{
+	width: 20%;
+	position: relative;
+	
+
+}
+.header-search input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 10px 5px;
+	
+
+
+
+}
+
+.header-search button{
+	position: absolute;
+	top: 30%;
+	right: 0;
+	background:transparent;
+	border:none;
+}
+.header-search i{
+	color:#ffb142;
+}
+
+/*==============================
+			banner Css
+===============================*/
+
+.banner{
+	background: url('images/girl.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center ;
+	background-attachment: fixed;
+	margin-bottom: 5px;
+	
+
+}
+.banner-overlay{
+	background: rgba(0, 0, 0, 0.6);
+	padding: 250px 0;
+}
+.banner-content {
+	text-align: center;
+	color: #fff;
+	width: 70%;
+	margin: 0 auto;
+}
+.banner-content h1{
+		margin-bottom: 15px;
+
+}
+
+/*==============================
+			Aboutus  Css
+===============================*/
+
+.about-us{
+	padding: 100px 0px;
+
+}
+
+
+.About-container{display: flex;
+
+justify-content: space-between;
+flex-flow: wrap;
+margin-top: 50px;}
+
+.About-left{ 
+	
+	width: 45%; }
+.About-right{width: 50%;
+	
+}
+
+.About-right h3{
+	margin-bottom: 15px;
+}
+
+.About-right h3 span{
+	color: red;
+}
+
+.About-right p{
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+ .About-right a{
+	background: #12CBC4;
+	padding: 8px 20px;
+	color: #fff;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 3px;
+	transition: .3s;
+
+}
+	
+.learn-more{
+	text-align:center;
+}
+.About-right a:hover{
+	background:#EE5A24 ;}
+
+/*==============================
+			team  Css
+===============================*/
+
+.team-area {
+	padding: 85px 0;
+	background: #dcdde1;
+	margin-top: 20px;
+}
+.team-title
+{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.team-title h3{
+	color: #353b48;
+
+}
+.team-title h3 span {
+	color: red;
+
+
+}
+.team-members{
+	display: flex;
+	justify-content: space-around;
+	flex-flow:wrap ;
+
+}
+
+.team{
+	flex-basis:23%;
+	position: relative;
+	overflow: hidden;
+	}
+.team:hover .team-overlay{
+	left: 0;
+}
+.team-overlay{
+	height: 100%;
+	width: 100%;
+	background: rgba(
+		0, 0, 0, 0.5);
+
+	position: absolute;
+	top: 0;
+	left: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: .3s;
+	
+	
+}
+
+.team-info{}
+.team-info  h4{
+	color:#fff;
+
+}
+.team-info ul{padding: 0;
+	list-style: none;
+	display: flex;
+
+}
+.team-info ul li {}
+
+.team-info ul li a{
+	color:#fff;
+	padding: 5px 10px;
+	display: block;
+	transition: .3s;
+}
+.team-info ul li a:hover{
+	color: red;
+}
+/*==============================
+			Info  area Css
+===============================*/
+.contact-area{
+	padding: 85px 0;
+	background: #fff;
+}
+.contact-from {
+	width: 50%;
+	margin: 0 auto;
+}
+.contact-from input,.contact-from textarea
+{width: 100%;
+box-sizing: border-box;
+}
+
+.contact-from input:focus{
+	outline:0;
+}
+
+
+
+.contact-from label{
+	font-size: 14px;
+	color: #000;
+}
+.user-name {
+	display: flex;
+	justify-content: space-between;
+}
+.f-name ,.l-name{
+	width: 48%;
+}
+
+.f-name input,.l-name input ,.user-mail input ,.user-msg textarea {
+	padding: 5px;
+	border: 1px solid #000;
+}
+.submit-msg input{ background: #000;
+color: #fff;
+padding: 10px 5px;
+text-transform: capitalize;
+border-radius: 10px;
+transition: .3s;
+
+ }
+
+.submit-msg {
+	width: 40%;
+	margin: 5px auto;
+
+}
+.submit-msg input:hover{
+	background: red;
+}
+/*==============================
+			footer  area Css
+===============================*/
+
+footer{
+	text-align: center;
+	background: gainsboro;
+	color: #000;
+	font-size: 13px;
+	padding: 15px 0;
+}
+
+footer p a{
+	color: red;
+}
+
+footer p i {
+	color: #2f3542;
+
+}

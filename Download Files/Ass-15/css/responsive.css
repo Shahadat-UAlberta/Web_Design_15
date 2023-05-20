@@ -1,0 +1,23 @@
+@media (max-width: 991px) {
+	.about-left,
+	.about-right{
+		width: 100%;
+	}
+	.about-left{
+		margin-bottom: 20px;
+	}
+	.member{
+		width: 48%;
+		margin-bottom: 20px;
+	}
+	.contact-form{
+		width: 75%;
+	}
+}
+
+@media (max-width: 575px){
+	member{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

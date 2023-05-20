@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,600&display=swap');
+/*Common Css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+img{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+a{
+	text-decoration: none;
+}
+     /*=-=-=-=-=-=-=-=-=
+		Menu Section
+     -=-=-=-=-=-=-=-=-=-*/
+
+.header-area{
+	padding: 20px;
+	background: #ecf0f1;
+}
+.continar{
+	padding: 20px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header-content{
+	display: flex;
+	justify-content: space-between;	
+}
+.menu{
+	width: 60%;
+}
+.menu ul{
+	display: flex;
+	justify-content: center;
+}
+
+.menu ul li{
+	position: relative;
+}
+
+.menu ul ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	
+}
+.menu ul li a{
+	padding: 15px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #34495e;
+	font-weight: 800;
+	transition: .5s;
+	display: block;
+	font-size: 25px;
+}
+.menu ul li:hover ul{
+	display: block;
+}
+
+.menu ul li a:hover{
+	color: #EF6A0A;
+	transform: scale(1.2);
+}
+
+.logo{
+	width: 15%;
+
+}
+.search{
+	position: relative;
+	width: 20%;
+}
+.search input{
+ box-sizing: border-box;
+ padding: 3px;
+}
+
+.search button{
+	position: absolute;
+	left: 65%;
+	top: 10%;
+	border: none;
+}
+
+.search button i{
+	color: red;
+}
+
+     /*=-=-=-=-=-=-=-=-=
+		Menu Section-End
+     -=-=-=-=-=-=-=-=-=-*/
+
+
+     /*Banner overly*/
+
+.banner{
+	background: url(images/pier.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+.banner-overly{
+	padding: 250px;
+	background: rgba(0, 0, 0,  .7);
+}
+.content{
+	text-align: center;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+.content h3{
+	padding-bottom: 8px;
+
+}
+
+/*Banner overly-End*/
+
+/*about section*/
+
+.about-us{
+	margin: 45px auto;
+}
+.continar{
+
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+}
+.left{
+	width: 45%;
+	padding: 25px;
+
+}
+.right{
+	width: 50%;
+	padding: 25px;
+	font-size: 18px;
+}
+.right p{
+	margin-bottom: 25px;
+	line-height: 1.7em;
+
+}
+.right p{
+	margin-top: 30px;
+}
+.right h3{
+	font-size: 35px;
+}
+.right h3 span{
+	color: #e67e22;
+}
+
+.right a{
+	text-transform: capitalize;
+	color: #000;
+	background: #e74c3c;
+}
+.right a:hover{
+	color: #e67e22;
+}
+/*about section*/
+
+/*Team Css*/
+
+.team-area{
+	padding: 85px 0;
+	background: #f2f2f2;
+}
+.continer{
+	width: 90%;
+	margin: 0 auto;
+}
+.section-title{
+	text-align: center;
+	margin-bottom: 30px;	
+}
+.section-title h2{
+	color: #000;
+	font-size: 45px;
+}
+.section-title span{
+	color: #e67e22
+}
+.team-members{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.member{
+	width: 23.5%;
+	position: relative;
+	overflow: hidden;
+}
+.team-overlay{
+	background: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+.member:hover .team-overlay{
+	right: 0;
+}
+
+.member-info{
+	text-align: center;
+}
+.member-info h4{
+	color: #fff;
+}
+.member-info ul{
+	display: flex;
+	padding: 0;
+}
+.member-info ul li a{
+	padding: 5px 10px;
+	display: block;
+	color: #fff;
+
+}
+.member-info ul li{
+}
+.member-info ul li a:hover{
+	color: #f39c12;
+}
+
+   /*contact css*/
+
+.area{
+	background: #fff;
+	margin: 85px 0;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.section-title{
+	margin-bottom: 25px;
+}
+.contact-from{
+	width: 50%;
+	margin: 0 auto;
+}
+.contact-from input,
+.contact-from textarea{
+	width: 100%;
+	box-sizing: border-box;
+}
+.contact-from input, textarea:focus{
+	outline: 0;
+}
+.first{
+	width: 48%;
+}
+.last{
+	width: 48%;
+}
+
+.first input{
+	padding: 5px;
+	border: 1px solid #34495e;
+}
+.last input{
+	padding: 5px;
+	border: 1px solid #34495e;
+}
+.user-name{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-from label{
+	font-size: 14px;
+	
+}
+.email{
+	border: none;
+	padding: 5px 0;
+	color: #fff;
+}
+.type-msg{
+	border: none;
+	padding: 5px 0;
+	color: #fff;
+}
+.submit{
+	
+}
+.submit input:hover{
+	cursor: pointer;
+}
+
+
+.submit input{
+	background: #e67e22;
+	border: none;
+	padding: 5px 0;
+	color: #fff;
+}
+
+.footer{
+	background: #2c3e50;
+	text-align: center;
+	padding: 10px;
+	display: block;
+
+}
+.footer-1 span{
+	color: #e67e22;
+	text-transform: uppercase;
+}
+.footer-1 p{
+	text-transform: uppercase;
+}

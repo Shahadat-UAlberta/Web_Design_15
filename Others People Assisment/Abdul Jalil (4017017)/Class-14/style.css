@@ -1,0 +1,384 @@
+/*--General Css--*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background: 
+	#fff;
+	font-family: 'Courgette', cursive;
+}
+
+img{
+	max-width: 100%;
+	height: auto 
+	isplay: block;
+}
+
+h1{
+	font-size: 45px;
+}
+ 
+ /*-- Header Area--*/
+
+.header-area{
+	background:#dff9fb;
+}
+ 
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header-content{
+	display: flex; 
+	justify-content: space-between;
+}
+
+.logo{
+	width: 15%;
+}
+
+.menu{
+	width: 60%; 
+}
+
+.menu > ul{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+
+
+}
+ 
+.menu ul li{
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li a{
+	color: #FC427B;
+    padding: 0 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    transition: .3s ;
+
+}
+
+.menu ul li a:hover{
+	color: #1B1464;
+	transform: translateY(-3px);
+
+}
+
+.menu ul ul{
+	position: absolute;
+	top: 100;
+	left: 0;
+	background:#9980FA;
+	display: none;
+}
+
+.menu ul li:hover ul{
+	display: block;
+}
+
+.menu ul ul li{
+	white-space: nowrap;
+	padding: 10px 0;
+}
+
+
+.serch{
+	width: 20%;
+	position: relative;
+
+}
+
+.serch input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 50px; 
+
+}
+.serch button{
+	position: absolute;
+	right: 10px;
+    background: transparent;
+    border: none;
+    top: 43%;
+    color: #1e3799;
+}
+
+
+/*--Banner CSS--*/
+
+
+
+.banner{
+	background: url(chobi/dear.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+.banner-overlay{
+	background: rgba(255, 195, 18, .3);
+	padding: 250px 0;
+}
+
+.banner-content{
+	text-align: center;
+	color: #1B1464;
+	width: 50%;
+	margin: 0 auto;
+} 
+
+.banner-content h1{
+	margin-bottom: 15px;
+}
+
+.banner-content p{
+	font-size: 20px;
+}
+
+.banner-content ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.banner-content ul li{
+	padding: 10px 10px;
+}
+
+.banner-content ul li a{
+	color: #fff;
+	font-size: 30px;
+
+}
+
+.banner-content ul li a i:hover{
+	transform: translateY(5px);
+	transition: .3s;
+}
+
+
+/*--About CSS--*/
+
+
+.about-us{
+	padding: 85px 0;
+}
+
+.about-content{
+	display: flex;
+	justify-content: space-between;
+}
+ 
+.about-left{
+	width: 45%;
+}
+
+.about-right{
+	width: 50%;
+}
+
+.about-right h3{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.about-right h3 span{
+	color: #0652DD;
+}
+
+.about-right p{
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #FC427B;
+}
+
+
+.about-right a{
+	background: #0652DD;
+	color: #fff;
+	padding:10px 20px;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 10px;
+	transition: .5s;
+}
+
+.about-right a:hover{
+	border-radius: 30px;
+}
+
+
+/*--Team CSS--*/
+
+
+.team-area{
+	padding: 85px 0;
+	background: #f1f2f6;
+
+}
+
+.section-title{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+.section-title h2{
+	color: #FC427B;
+}
+
+.section-title span{
+	color: #3742fa;
+}
+
+.team-members{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.member{
+	width: 23.5%;
+	position: relative;
+	overflow: hidden;
+ 
+}
+
+.team-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	position: absolute; 
+	top: 0;
+	right: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+ 
+.member-info{}
+
+.member-info h4{
+	color: #fff;
+	text-align: center;
+ 
+}
+
+.member-info ul{
+	padding: 0;
+	list-style: none;
+    display: flex;
+} 
+ 
+.member-info ul li{}
+
+.member-info ul li a{
+	color: #fff;
+	padding: 5px 10px;
+	display: block;
+}
+
+.member-info ul li a:hover{
+	color: #3c40c6;
+}
+.member:hover .team-overlay{
+	right: 0;
+}
+
+
+/*--About CSS--*/
+
+.contact-area{
+	background: #fff;
+	padding: 85px 0;
+}
+
+.contact-form{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+	outline: 0;
+}
+
+.contact-form label{
+	font-size: 14px;
+	color: #2c3e50;
+}
+
+.user-name{
+	display: flex;
+	justify-content: space-between;
+}
+
+.f-name,
+.l-name{
+	width: 48%;
+}
+
+.f-name input,
+.l-name input,
+.uaer-mail input,
+.user-mag textarea
+{
+	padding: 5px;
+	border: 1px solid ##2c3e50;
+}
+
+.user-msg,
+.user-mail,
+.submit-button{
+	margin-top: 10px;
+}
+
+.submit-button input{
+	border: none;
+	background: #3c40c6;
+	padding: 5px 0;
+	color: #fff;
+}
+
+
+.submit-button input:hover{
+	cursor: pointer;
+}
+
+footer{
+	background: #FC427B;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+}
+
+footer p a{
+	color: #3B3B98;
+}
+

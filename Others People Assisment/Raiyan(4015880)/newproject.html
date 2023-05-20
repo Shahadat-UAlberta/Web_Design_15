@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	\<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Lenovo</title>
+
+     <!--Main css-->
+	<link rel="stylesheet" href="newproject.css">
+</head>
+<body>
+	<!-- =-=-=-=-=-=-=-=-=-=
+		   Header Area
+	=-=-=-=-=-=--=-=-=-=-=-=-->
+	<header>
+		<div class="header-area">
+			<div class="container">
+				<div class="header-content">
+					<div class="logo">
+						<img src="data:image/png;base64,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">
+					</div>
+					<nav class="menu">
+						<ul>
+						<li><a href="#">home</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">service</a></li>
+						<li><a href="#">team</a></li>
+						<li><a href="#">contact</a></li>
+						</ul>
+						</nav>
+
+						<div class="search">
+							<form>
+								<input type="search" placeholder="search">
+								<button type="search"><i class="fas fa-search"></i></button>
+							</form>
+						</div>
+						
+				</div>
+				
+			</div>
+		</div>
+	</header><!--header end-->
+
+	<div class="banner">
+		<div class="banner-overlay">
+			<div class="banner-content">
+				<h1>hello</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quiui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+	<!--banner end-->
+
+	<!-- =-=-=-=-=-=-=-=-=-=
+		   About Area
+	=-=-=-=-=-=--=-=-=-=-=-=-->
+
+	<div class="about-us">
+		<div class="container">
+			<div class="about-content">
+				<div class="left">
+					<img src="https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+				</div>
+				<div class="right"> 
+					<h3><span>about</span> us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					u fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore ulpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =-=-=-=-=-=-=-=-=-=
+		   team Area
+	=-=-=-=-=-=--=-=-=-=-=-=-->
+	<div class="team-area">
+		<div class="container">
+			<div class="section-title">
+				<h3>our team</h3>
+			</div>
+			<div class="team-members">
+				<div class="members">
+					<img src="https://i.pinimg.com/236x/3c/04/2f/3c042f70f9d64ca90712ad85ce1f88f9.jpg">
+					<div class="team-overlay">
+						<div class="member-info">
+						<h4>Elon Musk</h4>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i><a/></li>
+							<li><a href="#"><i class="fab fa-instagram"></i><a/></li>
+							<li><a href="#"><i class="fab fa-twitter"></i><a/></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="members">
+					<img src="https://i.pinimg.com/236x/3c/04/2f/3c042f70f9d64ca90712ad85ce1f88f9.jpg">
+					<div class="team-overlay">
+						<div class="member-info">
+						<h4>Elon Musk</h4>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i><a/></li>
+							<li><a href="#"><i class="fab fa-instagram"></i><a/></li>
+							<li><a href="#"><i class="fab fa-twitter"></i><a/></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="members">
+					<img src="https://i.pinimg.com/236x/3c/04/2f/3c042f70f9d64ca90712ad85ce1f88f9.jpg">
+					<div class="team-overlay">
+						<div class="member-info">
+						<h4>Elon Musk</h4>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i><a/></li>
+							<li><a href="#"><i class="fab fa-instagram"></i><a/></li>
+							<li><a href="#"><i class="fab fa-twitter"></i><a/></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="members">
+					<img src="https://i.pinimg.com/236x/3c/04/2f/3c042f70f9d64ca90712ad85ce1f88f9.jpg">
+					<div class="team-overlay">
+						<div class="member-info">
+						<h4>Elon Musk</h4>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i><a/></li>
+							<li><a href="#"><i class="fab fa-instagram"></i><a/></li>
+							<li><a href="#"><i class="fab fa-twitter"></i><a/></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =-=-=-=-=-=-=-=-=-=
+		   contact Area
+	=-=-=-=-=-=--=-=-=-=-=-=-->
+	<div class="contact-area">
+		<div class="container">
+			<div class="section-title">
+				<h3>Contact us</h3>
+			</div>
+			<div class="contact-form">
+				<form>
+					<div class="user-name">
+					<div class="f-name">
+						<input type="text" name="f-name" placeholder="First name">
+					</div>
+					<div class="l-name">
+						<input type="text" name="f-name" placeholder="Last name name">
+					</div>
+					</div>
+					<div class="email">
+						<input type="email" name="mail" placeholder="Enter email">
+					</div>
+					<div class="comment">
+						<textarea cols="30" rows="9" placeholder="Comment"></textarea>
+					</div>
+					<div class="submit">
+						<input type="submit" name="submit" placeholder="submit">
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<p>All Rights Reserved</p>
+		</div>
+	</footer>
+
+<!--font awsome-->
+<script src="https://kit.fontawesome.com/808b75ffd7.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

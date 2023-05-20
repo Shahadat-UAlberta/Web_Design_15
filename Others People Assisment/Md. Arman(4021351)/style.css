@@ -1,0 +1,383 @@
+/*--Google fonts--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+
+
+
+
+
+/*--General CSS--*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+body{
+    font-family: 'Uchen', serif;
+}
+
+/*--Header CSS--*/
+
+.header-area{
+    background-color: #ceb0ae;
+    padding: 10px 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.header-content .logo{
+    width: 12%;
+    cursor: pointer;
+}
+.header-content .menu{
+    width: 60%;
+}
+.menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.menu ul li{
+    list-style: none;
+    position: relative;
+}
+.menu ul li a{
+    color: #00008b;
+    padding: 15px 30px;
+    display: block;
+    font-weight: 900;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.menu ul li a:hover{
+    color: red;
+    transform: translateY(-2px);
+}
+.menu ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ceb0ae;;
+    display: none;
+    
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.menu ul ul li{
+    white-space: nowrap;
+}
+.menu ul ul li a{
+    padding: 10px 8px;
+}
+.header-content .login{
+    width: 25%;
+    display: flex;
+}
+.header-content .login ul{
+   display: flex;  
+   justify-content: space-between;
+}
+.login ul li{
+    list-style: none;
+}
+.login ul li a{
+    color: #495c2a;
+    padding: 15px 20px;
+    display: block;
+    font-weight: 700;
+    transition: .5s;
+}
+.login ul li a:hover{
+    transform: scale(1.1);
+    color: #db0808;
+}
+
+
+/*--Banner CSS--*/
+
+.banner{
+    background: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.banner-overlay{
+    background-color: rgba(51, 24, 24, 0.671);
+    padding-bottom: 190px;
+}
+.banner-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+.banner-content{
+    width: 80%;
+    text-align: center;
+}
+.banner-content h1{
+    padding-left: 200px;
+    padding-top: 100px;
+    font-size: 45px;
+    color: #e7bebe;
+}
+.banner-content p{
+    padding-left: 50px;
+    font-size: 35px;
+    color: #ff4343;
+}
+.banner-content button{
+   margin: 20px ;  
+   padding: 10px;
+   background-color: transparent;
+   border-radius: 15px;
+   transition: .7s;
+}
+.banner-content button a{
+    color: whitesmoke;
+}
+.banner-content button:hover{
+    background-color: rgba(255, 0, 0, 0.459);
+    
+    border-radius: 20px;
+    transform: scale(1.1);
+     
+}
+.banner-icon{
+    width: 10%;
+    
+}
+.banner-icon ul{
+    padding-top: 180px;
+    padding-left: 80px;
+}
+.banner-icon ul li{
+    list-style: none;
+    font-size: 30px;transition: .8s;
+}
+.banner-icon ul li a{
+    font-size: px;
+    color: #791919;
+    
+   
+}
+.banner-icon ul li :hover{
+   transform: scale(1.2);
+   color: red;
+    
+}
+
+/*--About css--*/
+
+.about-us{
+    padding: 90px 0;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.about-left{
+    width: 48%;
+}
+.about-left img{
+    border-radius: 20px;
+}
+.about-right{
+    width: 40%;
+}
+.about-right h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.about-right p{
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 1.9em;
+}
+.about-right a{
+    background: #bb8d8d;;
+    padding: 7px 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: .5s;
+    border-radius: 5px;
+    color: #050505;
+}
+.about-right span{
+    color: red;
+}
+.about-right abbr{
+    text-decoration: none;
+    color: #ff0000;
+}
+.about-right .see-more a:hover{
+    background: rgba(255, 0, 0, 0.473);
+    border-radius: 20px;
+    color: #0e0101ec;
+}
+.about-right .see-more{
+    text-align: right;
+}
+
+/*--Team management CSS--*/
+
+.team-area{
+    padding: 90px 0;
+    background-color: #f1eeee;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-title h2{
+    color: #181414;
+}
+.section-title span{
+    color: #ff0000;
+}
+.team-member{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.member{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+.member img{ 
+    transition: 1s;
+}
+.member img:hover{
+    transform: scale(1.1);
+}
+.member-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.918);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+.member:hover .member-overlay{
+    left: 0%; 
+}
+.member-info h4{
+    color: white;
+    text-align: center;
+    transition: .5s;
+}
+.member-info h4:hover{
+    color: red;
+    padding: 7px;
+    background-color: rgb(2, 15, 14);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.member-info ul{
+    padding: 0;
+    display: flex;
+}
+.member-info ul li{
+    list-style: none;
+}
+.member-info ul li a{
+    color: white;
+    padding: 5px 8px;
+    display: block;
+    transition: 1.5s;
+}
+.member-info ul li a:hover{
+    background-color: rgb(17, 20, 20);
+    color: red;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+
+/*--CONTACT CSS***/
+
+
+.contact-area{
+    background-color: #f7f5f5;
+    padding: 90px 0;
+}
+.contact-us{
+    width: 40%;
+    margin: 0 auto;
+}
+.contact-us input, .contact-us textarea {
+    width: 90%;
+    box-sizing: border-box;
+
+}
+.contact-us input:focus, .contact-us textarea:focus{
+    outline: none;
+}
+.contact-us label{
+    font-size: 19px;
+    font-weight: 600;
+    color: #021311;
+}
+.user-name{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.f-name, .l-name{
+    width: 44%;
+}
+.f-name input, .l-name input, 
+.user-mail input, .user-messege textarea{
+    padding: 4px;
+    border: 1px solid #000000;
+}
+.submit, .user-messege, .user-mail{
+    margin-top: 12px;
+}
+.submit input{
+    border: none;
+    padding: 10px;
+    transition: 1s;
+    color: #fd0000; 
+    background-color: transparent;
+}
+.submit input:hover{
+    border-radius: 30px;
+    background-color: red;
+    color: #fffdfd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer{
+    background: #241816;
+    color: #fffdfd;
+    text-align: center;
+    padding: 15px;
+}
+footer a{
+    color: red;
+}

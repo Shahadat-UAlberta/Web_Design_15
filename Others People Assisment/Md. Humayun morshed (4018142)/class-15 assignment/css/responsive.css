@@ -1,0 +1,141 @@
+@media (max-width: 991px ) {
+
+/*==============================
+			header Css
+===============================*/
+.logo {
+	width: 25%;
+}
+	
+.header-search {
+	width: 20% 
+}
+
+.menu { width: 35%;
+
+}
+.menu ul li a{
+	padding: 25px 10px;
+}
+
+.header-search input{padding: 15px 5px;
+	
+}
+.menu {
+	margin-top: 
+}
+/*==============================
+			Aboutus  Css
+===============================*/
+
+.About-left,.About-right{
+	width: 100%;
+}
+
+
+.About-right h3 {
+	text-align: center;
+}
+
+.About-left {
+	margin-bottom: 25px;
+}
+
+/*==============================
+			team  Css
+===============================*/
+.team{
+	flex-basis:45%;
+	margin-bottom: 25px;}
+
+	/*==============================
+			Info  area Css
+===============================*/
+.contact-from {
+	width: 70%;}
+
+}
+/*==============================
+========================================
+====================================
+=====================================
+			New area Css
+			==============================
+			===============================
+===============================*/
+
+@media (max-width: 575px ) {
+
+	/*==============================
+			header Css
+===============================*/
+
+.header-content {
+	
+	display: flex;
+	justify-content: center;
+}
+
+
+.logo, .header-search ,.menu {
+	width: 100%;
+	margin: 0 auto;
+}
+	
+.logo {
+	text-align: center;
+	margin-bottom: 5px;
+	
+
+}
+
+.menu {
+	margin: 5px;
+	padding:;
+}
+.menu ul {
+
+z-index: 2; 
+
+}
+.menu ul li a{
+	padding: 25px 10px;
+}
+
+.header-search input{padding: 15px 5px;
+	
+}
+.menu {
+	margin-top: 50px 
+}
+/*==============================
+			Aboutus  Css
+===============================*/
+
+.About-left,.About-right{
+	width: 100%;
+}
+
+
+.About-right h3 {
+	text-align: center;
+}
+
+.About-left {
+	margin-bottom: 25px;
+}
+
+/*==============================
+			team  Css
+===============================*/
+.team{
+	flex-basis:100%;
+	margin-bottom: 25px;}
+
+	/*==============================
+			Info  area Css
+===============================*/
+.contact-from {
+	width: 70%;}
+
+}

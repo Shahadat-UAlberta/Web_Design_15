@@ -1,0 +1,326 @@
+/* =-=-==-=-=- Main  CSS  =-=-=-=-=-*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #fff;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* =-=-=-=-= Header CSS -=-=-=-=-=*/
+
+.header-area{
+	background: #2c3e50;
+	padding: 20px 0
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.content{
+	display: flex;
+}
+.logo{
+	width: 15%;
+	margin-top: 0;
+}
+.menu{
+	width: 60%;
+	margin: 0 auto;
+	
+}
+.menu ul{
+	display: flex;
+}
+.menu ul li{
+	list-style: none;
+	padding: 0 30px;
+}
+.menu ul li a{
+	font-size: 25px;
+	color: #fff;
+	text-transform: capitalize;
+	transition: .3s;
+}
+.menu ul li a:hover{
+	color: #d35400;
+	transform: translateY(-2px);
+}
+.signup{
+	width: 10%;
+}
+.signup a{
+	color: #fff;
+	font-size: 25px;
+	border: 2px solid  #d35400;
+	background: #d35400;
+	
+
+}
+.signup a:hover{
+	background: #d35400;
+	transform: translate(3px);
+	border-radius: 50px;
+}
+/* =-=-=-=-= Banner End -=-=-=-=-=*/
+
+
+.banner{
+	background: url(images/2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+.banner-overlay{
+	background: rgba(0, 0, 0, .7);
+	padding: 250px 0;
+}
+.banner-content{
+	text-align: center;
+	color: #fff;
+	width: 40%;
+	margin: 0 auto;
+}
+.banner-content h1{
+	margin-bottom: 15px;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-= 
+	    About CSS
+ =-=-=-=-=-=-=-=-=-=-=-= */
+
+ .about-us{
+ 	padding: 85px 0;
+ }
+ .about-content{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-flow: wrap;
+ }
+ .about-left{
+ 	width: 45%;
+ }
+ .about-right{
+ 	width: 50%;
+  background: #81ecec;
+ }
+  .about-right h3{
+  	font-size: 35px;
+  	margin-bottom: 15px;
+    text-align: center;
+  }
+  .about-right h3 span{
+  	color: #EF6A0A;
+  }
+  .about-right p{
+  	margin-bottom: 20px;
+  	font-size: 18px;
+  	line-height: 1.6em;
+  }
+  .about-right a{
+  	background: #EF6A0A;
+  	color: #fff;
+  	padding: 8px 25px;
+  	margin-top: 10px;
+  	display: inline-block;
+  }
+  .learn-more{
+  	
+  }
+
+/* =-=-=-=-= Team CSS -=-=-=-=-=*/
+
+.team-area{
+  	padding: 85px 0;
+  	background: #EF6A0A;
+  }
+  .section-title{
+  	text-align: center;
+  	margin-bottom: 40px;
+  }
+  .section-title h2{
+  	font-size: 50px;
+  	color: #2c3e50;
+  }
+  .section-title span{
+  	color: #000;
+  }
+  .team-memebers{
+  	display: flex;
+  	justify-content: space-between;
+  	
+  }
+  .member1,
+  .member2,
+  .member3,
+  .member4{
+  	width: 23.5%;
+  	position: relative;
+  	overflow: hidden;
+  }
+  .team-overlay1{
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(0, 0, 0, .7);
+  	position: absolute;
+  	top: 0;	
+  	left: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	transition: .5s;
+  }
+  .team-overlay2{
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(0, 0, 0, .7);
+  	position: absolute;
+  	top: 100%;	
+  	left: 0;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	transition: .5s;
+  }
+  .team-overlay3{
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(0, 0, 0, .7);
+  	position: absolute;
+  	bottom: 100%;	
+  	right: 0;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	transition: .5s;
+  }
+  .team-overlay4{
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(0, 0, 0, .7);
+  	position: absolute;
+  	bottom:  0;	
+  	right: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	transition: .5s;
+  }
+
+  .member-info h4{
+  	color: #fff;
+  	text-align: center;
+  	
+  }
+  .member-info ul{
+  	padding: 0;
+  	list-style: none;
+  	display: flex;
+  	
+  }
+  .member-info ul li{}
+  .member-info ul li a{
+  	color: #fff;
+  	padding: 5px 8px;
+  	display: block;
+  	
+}
+.member-info ul li a:hover{
+	color: #EF6A0A;
+}
+.member1:hover .team-overlay1{
+	left: 0;
+}
+.member2:hover .team-overlay2{
+	top: 0;
+}
+.member3:hover .team-overlay3{
+	bottom: 0;
+}
+.member4:hover .team-overlay4{
+	right: 0;
+}
+
+
+  /* =-=-=-=-=-=-=-=-=-=-=-= 
+	    Contact CSS
+ =-=-=-=-=-=-=-=-=-=-=-= */
+
+  .contact-area{
+  	background: #81ecec;
+  	padding: 85px 0;
+  }
+  .contact-form{
+  	width: 50%;
+  	margin: 0 auto;
+  }
+  .contact-form input,
+  .contact-form textarea{
+  	width: 100%;
+  	box-sizing: border-box;
+  }
+   .contact-form input:focus,
+   .contact-form textarea:focus{
+   	outline: 0;
+   }
+  .contact-form label{
+  	font-size: 14px;
+  	color: #2c3e50;
+  }
+  .user-name{
+  	display: flex;
+  	justify-content: space-between;
+  }
+  .f-name, .l-name{
+  	width: 48%;
+  }
+ 	
+  .f-name input,
+  .l-name input,
+  .user-mail input,
+  .user-msg textarea
+  {
+  	padding: 5px;
+  	border: 1px solid #34495e;
+  }
+  .user-msg,
+  .user-mail,
+  .submit-button{
+  	margin-top: 10px;
+  }
+  
+
+  .submit-button input{
+  	border: none;
+  	background: #e84393;
+  	padding: 5px 0;
+  	color: #fff;
+  }
+
+  .submit-button input:hover{
+  	cursor: pointer;
+  }
+
+ /* =-=-=-=-=-=-=-=-=-=-=-= 
+	    footer CSS
+ =-=-=-=-=-=-=-=-=-=-=-= */
+  footer{
+  	background: #e84393;
+  	color: #fff;
+  	text-align: center;
+  	padding: 15px 0;
+  }
+  footer p a{
+  	color: #2d3436;
+  }
+  /**/

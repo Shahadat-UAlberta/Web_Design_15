@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+    h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 40px;
+}
+
+    
+}
+
+.row{
+    display: flex;
+}
+
+.col-12{
+    width: 100%;
+    padding: 0 15px;
+}
+.col-4{
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.col-3{
+    width: 25%;
+    padding: 0 15px;
+}
+
+
+/*header section styles*/
+   @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  body{
+    background: #fff;
+    font-family: 'Otomanopee One', sans-serif;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+ /* =-=-=-=-=-=-=-=-=-=-=-=--=--=--=--=--=-
+          Header CSS
+    =-=-=-=-=-=-=-=-=-=-=-=--=--=--=--=--=-
+*/
+    .header-area{
+        background: #ecf0f1;
+    }
+    .container{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .header-content{
+        display: flex;
+    }
+
+    .logo{#2980b9#2980b9
+        width: 15%;
+    }
+    .menu{
+        width: 60%;
+    }
+    .menu > ul{
+        display: flex;
+        justify-content: center;
+    }
+    .menu ul li{
+        list-style: none;
+        position: relative;
+
+    }
+    .menu ul li a{
+        color: #636e72;
+        padding: 8px 15px;
+        display: block;
+    }
+    .menu ul li a:hover{
+        color: #2980b9;
+        transform: translateY(-2px);
+    }
+    .menu ul ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #dcdde1;
+        display: none;
+
+
+    }
+    .menu ul li:hover ul{
+        display: block;
+    }
+    .menu ul ul li{
+        white-space: nowrap;
+    }
+    .search{
+        width: 20%;
+        position: relative;
+    } 
+    .search input{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box ;
+    }
+    .search button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        
+    }
+
+
+.banner-section{
+    background: linear-gradient(rgba(68, 68, 68, 0.50),rgba(68, 68, 68, 0.50)), url(4.jpeg);
+    height: 550px;
+    background-size: 100% 100%;
+}
+.banner-text{
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.banner-text a {
+    color: #fff;
+    background: #0069c3;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.banner-text h3{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.banner-text p{
+    width: 60%;
+    margin: 0 auto
+}
+
+
+/*item section styles*/
+.item-section{
+    padding: 50px 0;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-header p{
+    width: 60%;
+    margin: 0 auto;
+}
+.item-box{
+    display: flex;
+}
+.item-text{
+    margin-left: 10px;
+}
+.item-text h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.item-text p{
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 24px;
+}
+.item-icon i {
+    font-size: 35px;
+    color: #01dada;
+}
+
+
+    /*=-=-=-=-=-=-=-=-=-=-=-= 
+        Team CSS
+ =-=-=-=-=-=-=-=-=-=-=-= */
+
+  .team-area{
+    padding: 85px 0;
+    background: #f2f2f2;
+  }
+  .section-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .section-title h2{
+    color: #2c3e50;
+  }
+  .section-title span{
+    color: #0cfa23;
+  }
+  .team-memebers{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
+  .member{
+    width: 23.5%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  .team-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    right: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+  }
+  .member-info{}
+  .member-info h4{
+    color: #fff;
+    text-align: center;
+  }
+  .member-info ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  .member-info ul li{}
+  .member-info ul li a{
+    color: #fff;
+    padding: 5px 10px;
+    display: block;
+  }
+  .member-info ul li a:hover{
+    color: #EF6A0A;
+  }
+  .member:hover .team-overlay{
+    right: 0;
+  }
+
+
+  /* =-=-=-=-=-=-=-=-=-=-=-= 
+        Contact CSS
+ =-=-=-=-=-=-=-=-=-=-=-= */
+
+  .contact-area{
+    background: #fff;
+    padding: 85px 0;
+  }
+  .contact-form{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .contact-form input,
+  .contact-form textarea{
+    width: 100%;
+    box-sizing: border-box;
+  }
+   .contact-form input:focus,
+   .contact-form textarea:focus{
+    outline: 0;
+   }
+  .contact-form label{
+    font-size: 14px;
+    color: #2c3e50;
+  }
+  .user-name{
+    display: flex;
+    justify-content: space-between;
+  }
+  .f-name, .l-name{
+    width: 48%;
+  }
+    
+  .f-name input,
+  .l-name input,
+  .user-mail input,
+  .user-msg textarea
+  {
+    padding: 5px;
+    border: 1px solid #34495e;
+  }
+  .user-msg,
+  .user-mail,
+  .submit-button{
+    margin-top: 10px;
+  }
+  
+
+  .submit-button input{
+    border: none;
+    background: #16f70a;
+    padding: 5px 0;
+    color: #fff;
+  }
+
+  .submit-button input:hover{
+    cursor: pointer;
+  }
+
+
+  footer{
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+  }
+  footer p a{
+    color: #16f70a;
+  }
+
+
+

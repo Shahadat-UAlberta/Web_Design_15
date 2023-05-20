@@ -1,0 +1,426 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&display=swap');
+
+
+
+
+/* --=-==-==-=-=-=-=-==-==-=
+		General CSS
+=-=--=-=-===-=-=-=-==-=-= */
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+body{
+	background: #fff;
+}
+a{
+	text-decoration: none;
+}
+
+
+/* =-==-=-=-=-==-=-=-=-=-==-
+		Header CSS
+=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.header-area{
+	background: #dfe6e9;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.header-content{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	width: 15%;
+}
+.menu{
+	width: 60%;
+}
+.menu > ul{
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	list-style: none;
+	position: relative;
+}
+.menu ul li a{
+	display: block;
+	color: #000;
+	padding: 35px 25px;
+	font-weight: 700;
+	font-size: 20px;
+	transition: .5s;
+}
+.menu ul li a:hover{
+	color: #c44569;
+	transform: translateY(2px);
+}
+.menu ul ul{
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 5;
+}
+.menu ul li:hover ul{
+	display: block;
+}
+.menu ul ul li{
+	white-space: nowrap;
+}
+.menu ul ul li a{
+	padding: 10px;
+	color: #fff;
+}
+.search{
+	width: 20%;
+	position: relative;
+}
+.search input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 25px;
+}
+.search button{
+	position: absolute;
+	background: transparent;
+	border: none;
+	top: 32%;
+	right: 5%;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-===-=-=
+		Banner CSS
+=-=-=-=-=-=-=-=-=-=--=-=- */
+
+.banner{
+	background: url(1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.banner-overly{
+	background: rgba(0, 0, 0, .5);
+	padding: 500px;
+}
+.banner-content h1{
+	color: #dfe6e9;
+	font-size: 150px;
+	top: 20%;
+	left: 15%;
+	position: absolute;
+	font-family: 'Anton', sans-serif;
+}
+.banner-content h2{
+	color: #dfe6e9;
+	font-size: 120px;
+	top: 30%;
+	left: 20%;
+	margin-top: 60px;
+	position: absolute;
+	font-family: 'Anton', sans-serif;
+}
+.banner-content p{
+	color: #fff;
+	font-size: 50px;
+	padding-top: 30px;
+	font-family: 'Dancing Script', cursive;
+}
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-
+		Products CSS
+=-=-=-=-=-=-=-=-=-=-=-=-=- */		
+
+.proudcts{
+
+}
+.products-area{
+	column-count: 4;
+	padding: 80px 0;
+	position: relative;
+
+}
+.products-img img{
+	display: inline-block;
+	
+}
+
+.info a h4{
+	color: #fff;
+	font-size: 30px;
+	transition: .5s;
+}
+.info a h4:hover{
+	color: #c44569;
+	transform: scale(1.5);
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-==-
+		About CSS
+=--=-=-=-=-=-=-=-=-=-=-= */
+
+.about-content{
+	display: flex;
+	margin-top: 50px;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+.about-left{
+	width: 35%;
+}
+.about-right{
+	width: 50%;
+}
+.about-right h3{
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-family: 'Anton', sans-serif;
+
+}
+.about-right h3 span{
+	color:  #c44569;
+}
+.about-right p{
+	margin-bottom: 20px;
+	font-size: 17px;
+	line-height: 1.5em;
+}
+.about-right a{
+	color: #fff;
+	background: #c44569;
+	padding: 8px 22px;
+	display: inline-block;
+	font-weight: 800;
+}
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-==-
+		Team CSS
+=--=-=-=-=-=-=-=-=-=-=-= */
+
+.team-area{
+	background: #dfe6e9;
+	padding: 80px;
+	margin-top: 70px;
+}
+.section-title{
+	text-align: center;
+	
+}
+.section-title h3{
+	margin-bottom: 40px;
+	font-size: 40px;
+	font-family: 'Anton', sans-serif;
+}
+.section-title h3 span{
+	color: #c44569;
+}
+.team-members{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+.member{
+	width: 23%;
+	position: relative;
+	overflow: hidden;
+}
+.team-overly{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 100%;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	transition: .6s;
+}
+.member:hover .team-overly{
+	bottom: 0;
+}
+.member-info h4{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.member-info ul{
+	display: flex;
+}
+.member-info ul li{
+	list-style: none;
+}
+.member-info ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+
+}
+.member-info ul li a i{
+	transition: .5s;
+	font-size: 20px;
+}
+.member-info ul li a i:hover{
+	color: #c44569;
+	transform: scale(1.5);
+}
+
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-==-
+		Contact CSS
+=--=-=-=-=-=-=-=-=-=-=-= */
+
+.contact-area{
+	padding: 85px 20px;
+}
+.contact-form{
+	width: 50%;
+	margin: 0 auto;
+}
+.contact-form input{
+	width: 100%;
+	box-sizing: border-box;
+}
+.contact-form label{
+	font-size: 17px;
+	color: #57606f;
+}
+.contact-form textarea{
+	width: 100%;
+	box-sizing: border-box;
+}
+.user-name{
+	display: flex;
+	justify-content: space-between;
+}
+.user-name label{
+	padding-bottom: 10px;
+}
+.f-name, .l-name{
+	width: 48%;
+}
+.f-name input{
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #2f3542;
+}
+.l-name input{
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #2f3542;
+}
+.user-mail input{
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #2f3542;
+}
+.user-message{}
+textarea{
+	border: 1px solid #2f3542;
+}
+.submit-button input{
+	padding: 5px 0;
+	color: #fff;
+	font-weight: bold;
+	background: #c44569;
+}
+
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-==-
+		Footer CSS
+=--=-=-=-=-=-=-=-=-=-=-= */
+
+.footer-area{
+	background: #2f3542;
+	padding: 20px;
+}
+.footer-area p{
+	text-align: center;
+	color: #fff;
+	margin-top: 10px;
+}
+.footer-area p span{
+	color: #c44569;
+}
+.footer-area ul{
+	display: flex;
+	justify-content: center;
+}
+.footer-area ul li{
+	list-style: none;
+}
+.footer-area ul li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 20px;
+}
+
+
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-==-
+		Responsive CSS
+=--=-=-=-=-=-=-=-=-=-=-= */
+
+
+@media (max-width: 991px) {
+	.about-left{
+		width: 100%;
+	}
+	.about-right{
+		width: 100%;
+	}
+	.about-left{
+		margin-bottom: 20px;
+	}
+	.member{
+		width: 48%;
+		margin-bottom: 20px;
+	}
+	.contact-form{
+		width: 70%;
+	}
+
+}
+
+
+
+@media (max-width: 575px) {
+	.member{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

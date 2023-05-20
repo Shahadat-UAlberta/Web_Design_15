@@ -1,0 +1,163 @@
+/* =-=-=-=-=-=-=-=-=-=-=-
+		General CSS
+=-=-=-=-=-=-=-=-=-=-=-=- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+h1{
+	font-size: 45px;
+}
+h2{
+	font-size: 45px;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-
+		Header CSS
+=-=-=-=-=-=-=-=-=-=-=-=- */
+
+header{
+	background: #ecf0f1;
+	padding: 20px 0;
+
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.header-content{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	width: 15%;
+}
+.menu{
+	width: 60%;
+}
+.menu > ul{
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	list-style: none;
+	position: relative;
+}
+.menu ul li a{
+	background: #ecf0f1;
+	padding: 5px 20px;
+	display: block;
+	font-weight: 800;
+	text-transform: capitalize;
+	transition: .4s;
+}
+.menu ul li a:hover{
+	color: #ef6a0a;
+	transform: translateY(-2px);
+}
+.menu ul ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #ecf0f1;
+	display: none;
+}
+.menu ul li:hover ul{
+	display: block;
+}
+.menu ul ul li{
+	white-space: nowrap;
+}
+.menu ul ul li a{
+	padding: 10px 20px ;
+}
+.search{
+	width: 20%;
+	position: relative;
+}
+.search input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+.search button{
+	position: absolute;
+	right: 10px;
+	background: transparent;
+	border: none;
+	top: 30%;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-
+		Banner CSS
+=-=-=-=-=-=-=-=-=-=-=-=- */
+.banner{
+	background: url('images/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.banner-overlay{
+	background: rgba(0, 0, 0, .5);
+	padding: 250px 0;
+}
+.banner-content{
+	text-align: center;
+	color: #fff;
+	width: 50%;
+	margin: 0 auto;
+}
+.banner-content h1{
+	margin-bottom: 15px;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-
+		abut CSS
+=-=-=-=-=-=-=-=-=-=-=-=- */
+.about-us{
+	padding: 85px 0;
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+}
+.about-left{
+	width: 45%;
+}
+.about-right{
+	width: 50%;
+}
+.about-right h3{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.about-right h3 span{
+	color: #ef6a0a;
+}
+.about-right p{
+	margin-bottom: 20px;
+	line-height: 1.6em;
+}
+.about-right a{
+	background: #ef6a0a;
+	color: #fff;
+	padding: 8px 25px;
+	margin: 10px;
+	display: inline-block;
+}
+.learn-more{
+	text-align: right;
+}
